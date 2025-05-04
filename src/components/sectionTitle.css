@@ -1,0 +1,11 @@
+.section-title {
+  margin: 24px 0 16px;
+}
+
+.section-title h2 {
+  font-size: 20px;
+  font-weight: 700;
+  border-left: 5px solid #e67e22;
+  padding-left: 12px;
+  color: #333;
+}

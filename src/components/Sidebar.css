@@ -1,0 +1,86 @@
+.sidebar {
+  min-width: 220px;
+  background: #fff;
+  border-radius: 18px;
+  margin: 2rem 1.5rem 2rem 2rem;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 4px 24px #0002;
+  height: fit-content;
+  animation: sidebarFadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes sidebarFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sort-section,
+.genre-section {
+  margin-bottom: 2.5rem;
+}
+
+.sort-section label,
+.genre-section label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.7rem;
+  color: #b97a56;
+  letter-spacing: 1px;
+}
+
+.sort-section select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: #f6f6f6;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.sort-section select:focus {
+  border: 1.5px solid #EDC996;
+  outline: none;
+}
+
+.sort-section select option  {
+    outline: #EDC996;
+  }
+
+.genre-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.genre-section button {
+  background: none;
+  border: none;
+  color: #444;
+  padding: 0.6rem 0.5rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.05rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 0.2rem;
+  transition: background 0.25s, color 0.25s, transform 0.18s;
+  will-change: background, color, transform;
+  position: relative;
+  z-index: 1;
+}
+
+.genre-section button.active,
+.genre-section button:hover {
+  background: linear-gradient(90deg, #f0e6d2 60%, #ffe7c2 100%);
+  color: #b97a56;
+  font-weight: bold;
+  transform: scale(1.04) translateX(4px);
+  box-shadow: 0 2px 8px #b97a5633;
+}

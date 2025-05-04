@@ -1,0 +1,18 @@
+.trending-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .trending-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  .trending-item p {
+    color: #555;
+    font-weight: 500;
+  }
